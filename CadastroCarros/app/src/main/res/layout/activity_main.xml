@@ -1,0 +1,173 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <TextView
+        android:id="@+id/textViewModelo"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Informe o Modelo"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtModelo"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/txtModelo"
+        android:layout_width="399dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:inputType="text"
+        android:hint="Informe o Modelo"
+        app:layout_constraintBottom_toTopOf="@+id/textViewMarca"
+        app:layout_constraintTop_toBottomOf="@+id/textViewModelo" />
+
+    <TextView
+        android:id="@+id/textViewMarca"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Informe a Marca"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtMarca"
+        app:layout_constraintTop_toBottomOf="@+id/txtModelo" />
+
+
+    <EditText
+        android:id="@+id/txtMarca"
+        android:layout_width="400dp"
+        android:layout_height="47dp"
+        android:ems="10"
+        android:hint="Informe a Marca"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/textViewAnoFabricacao"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMarca" />
+
+    <TextView
+        android:id="@+id/textViewAnoFabricacao"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ano Fabricacao"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtAnoFabricacao"
+        app:layout_constraintTop_toBottomOf="@+id/txtMarca" />
+
+
+    <EditText
+        android:id="@+id/txtAnoFabricacao"
+        android:layout_width="399dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="Informe o Ano de Fabricacao"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/textViewCor"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAnoFabricacao" />
+
+    <TextView
+        android:id="@+id/textViewCor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cor"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtCor"
+        app:layout_constraintTop_toBottomOf="@+id/txtAnoFabricacao" />
+
+
+    <EditText
+        android:id="@+id/txtCor"
+        android:layout_width="399dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="Informe a Cor"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/textViewMotor"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCor" />
+
+    <TextView
+        android:id="@+id/textViewMotor"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Motor"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtMotor"
+        app:layout_constraintTop_toBottomOf="@+id/txtCor" />
+
+
+    <EditText
+        android:id="@+id/txtMotor"
+        android:layout_width="399dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="Informe o Motor"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTipoCombustivel"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMotor" />
+
+    <TextView
+        android:id="@+id/textViewTipoCombustivel"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo Combustivel"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtTipoCombustivel"
+        app:layout_constraintTop_toBottomOf="@+id/txtMotor" />
+
+
+    <EditText
+        android:id="@+id/txtTipoCombustivel"
+        android:layout_width="399dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="Informe o Tipo de Combustivel"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/textViewTabelaFipe"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTipoCombustivel" />
+
+    <TextView
+        android:id="@+id/textViewTabelaFipe"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TabelaFipe"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtTabelaFipe"
+        app:layout_constraintTop_toBottomOf="@+id/txtTipoCombustivel" />
+
+
+    <EditText
+        android:id="@+id/txtTabelaFipe"
+        android:layout_width="399dp"
+        android:layout_height="40dp"
+        android:ems="10"
+        android:hint="Informe o Valor na Tabela Fipe"
+        android:inputType="number"
+        app:layout_constraintBottom_toTopOf="@+id/btnCadastrar"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTabelaFipe" />
+
+
+    <Button
+        android:id="@+id/btnCadastrar"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:text="Cadastrar"
+        app:layout_constraintBottom_toTopOf="@+id/btnVerCarro"
+        android:layout_marginStart="24dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTabelaFipe"
+        app:layout_goneMarginStart="10dp" />
+
+    <Button
+        android:id="@+id/btnVerCarro"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="16dp"
+        android:text="Ver Carro"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/btnCadastrar"
+        tools:visibility="invisible" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>

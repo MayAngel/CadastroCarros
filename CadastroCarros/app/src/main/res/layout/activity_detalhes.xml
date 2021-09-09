@@ -1,0 +1,165 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DetalhesActivity">
+
+    <TextView
+        android:id="@+id/textViewTituloResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cadastro Result"
+        android:textSize="30sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@+id/textViewModeloResult"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textViewModeloResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Modelo"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtModeloResult"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTituloResult" />
+
+    <TextView
+        android:id="@+id/txtModeloResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:inputType="text"
+        app:layout_constraintBottom_toTopOf="@+id/textViewMarcaResult"
+        app:layout_constraintTop_toBottomOf="@+id/textViewModeloResult" />
+
+    <TextView
+        android:id="@+id/textViewMarcaResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Marca"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtMarcaResult"
+        app:layout_constraintTop_toBottomOf="@+id/txtModeloResult" />
+
+
+    <TextView
+        android:id="@+id/txtMarcaResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/textViewAnoFabricacaoResult"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMarcaResult" />
+
+    <TextView
+        android:id="@+id/textViewAnoFabricacaoResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Ano Fabricacao"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtAnoFabricacaoResult"
+        app:layout_constraintTop_toBottomOf="@+id/txtMarcaResult" />
+
+
+    <TextView
+        android:id="@+id/txtAnoFabricacaoResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/textViewCorResult"
+        app:layout_constraintTop_toBottomOf="@+id/textViewAnoFabricacaoResult" />
+
+    <TextView
+        android:id="@+id/textViewCorResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Cor"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtCorResult"
+        app:layout_constraintTop_toBottomOf="@+id/txtAnoFabricacaoResult" />
+
+
+    <TextView
+        android:id="@+id/txtCorResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/textViewMotorResult"
+        app:layout_constraintTop_toBottomOf="@+id/textViewCorResult" />
+
+    <TextView
+        android:id="@+id/textViewMotorResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Motor"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtMotorResult"
+        app:layout_constraintTop_toBottomOf="@+id/txtCorResult" />
+
+
+    <TextView
+        android:id="@+id/txtMotorResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/textViewTipoCombustivelResult"
+        app:layout_constraintTop_toBottomOf="@+id/textViewMotorResult" />
+
+    <TextView
+        android:id="@+id/textViewTipoCombustivelResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Tipo Combustivel"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtTipoCombustivelResult"
+        app:layout_constraintTop_toBottomOf="@+id/txtMotorResult" />
+
+
+    <TextView
+        android:id="@+id/txtTipoCombustivelResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/textViewTabelaFipeResult"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTipoCombustivelResult" />
+
+    <TextView
+        android:id="@+id/textViewTabelaFipeResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="TabelaFipe"
+        android:textSize="18sp"
+        app:layout_constraintBottom_toTopOf="@+id/txtTabelaFipeResult"
+        app:layout_constraintTop_toBottomOf="@+id/txtTipoCombustivelResult" />
+
+
+    <TextView
+        android:id="@+id/txtTabelaFipeResult"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:text=""
+        app:layout_constraintBottom_toTopOf="@+id/btnVoltar"
+        app:layout_constraintTop_toBottomOf="@+id/textViewTabelaFipeResult" />
+
+
+    <Button
+        android:id="@+id/btnVoltar"
+        android:layout_width="300dp"
+        android:layout_height="60dp"
+        android:layout_marginStart="24dp"
+        android:layout_marginBottom="24dp"
+        android:text="Voltar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/txtTabelaFipeResult"
+        app:layout_goneMarginStart="10dp" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
